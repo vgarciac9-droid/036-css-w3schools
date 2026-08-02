@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Z-index</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .caja1 {
+            position: absolute;
+            width: 200px;
+            height: 120px;
+            background-color: lightblue;
+            top: 100px;
+            left: 50px;
+            z-index: 1;
+        }
+
+        .caja2 {
+            position: absolute;
+            width: 200px;
+            height: 120px;
+            background-color: lightcoral;
+            top: 140px;
+            left: 120px;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Uso de Z-index</h1>
+
+    <p>
+        Z-index permite decidir qué elemento debe aparecer encima de otro.
+    </p>
+
+    <div class="caja1">
+        Caja azul
+    </div>
+
+    <div class="caja2">
+        Caja roja encima
+    </div>
+
+</body>
+
+</html>
