@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>CSS Dropdowns</title>
+
+<style>
+
+body{
+    font-family:Arial, sans-serif;
+}
+
+.dropdown{
+
+display:inline-block;
+
+position:relative;
+
+}
+
+button{
+
+padding:12px 20px;
+
+background-color:#3498db;
+
+color:white;
+
+border:none;
+
+cursor:pointer;
+
+}
+
+.menu{
+
+display:none;
+
+position:absolute;
+
+background-color:#f1f1f1;
+
+min-width:180px;
+
+box-shadow:0 0 10px rgba(0,0,0,.2);
+
+}
+
+.menu a{
+
+display:block;
+
+padding:12px;
+
+text-decoration:none;
+
+color:black;
+
+}
+
+.menu a:hover{
+
+background:#ddd;
+
+}
+
+.dropdown:hover .menu{
+
+display:block;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Menú desplegable</h1>
+
+<div class="dropdown">
+
+<button>Opciones</button>
+
+<div class="menu">
+
+<a href="#">HTML</a>
+
+<a href="#">CSS</a>
+
+<a href="#">JavaScript</a>
+
+</div>
+
+</div>
+
+<p>
+
+Al pasar el cursor sobre el botón aparece el menú
+con diferentes opciones.
+
+</p>
+
+</body>
+
+</html>
